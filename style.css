@@ -24,7 +24,8 @@ body {
         left: 25%;
     }
     footer p{
-        margin-left: 60px;
+      margin-left: 51px;
+        font-size: 12px;
     }
 }
 .clock-container {
