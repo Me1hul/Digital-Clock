@@ -23,6 +23,9 @@ body {
     .clock-container{
         left: 25%;
     }
+    footer p{
+        margin-left: 60px;
+    }
 }
 .clock-container {
     position: relative;
