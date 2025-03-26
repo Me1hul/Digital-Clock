@@ -107,6 +107,29 @@ body {
     }
 }
 
+@media (max-width: 342px) {
+    .clock {
+        padding: 0px 3px;
+        width: 55%;
+        height: 29px;
+        min-height: 0;
+        top: 48%;
+        left: 66px;
+        border-radius: 1px;
+      }
+
+    
+
+
+    .time {
+        font-size: 10px;
+    }
+
+    .period {
+        font-size: 10px;
+    }
+}
+
 /* Media query for small phone screens (e.g., 320px) */
 @media (max-width: 320px) {
     .clock {
