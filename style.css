@@ -253,6 +253,15 @@ body {
         top: 86px;
     }
 }
+@media (max-width: 416px) {
+    .clock {
+        padding: 1px 17px;
+        width: 45%;
+        min-height: 42px;
+        left: 93px;
+        top: 95px;
+    }
+}
 
 @media (max-width: 320px) {
     .clock {
