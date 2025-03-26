@@ -10,17 +10,20 @@ body {
 .heading {
     border-radius: 5px;
     font-size: medium;
-    /* ~16px */
     color: aliceblue;
     text-align: center;
     margin: 0 0 20px 0;
 }
 
-.heading h1 {
+.h2 {
     font-size: 50px;
-    /* If nested, though not needed */
-}
 
+}
+@media (max-width: 400px) {
+    .clock-container{
+        left: 25%;
+    }
+}
 .clock-container {
     position: relative;
     display: flex;
@@ -66,4 +69,13 @@ body {
     font-size: 24px;
     vertical-align: super;
 }
+
+
+
+
+
+
+
+
+
 
