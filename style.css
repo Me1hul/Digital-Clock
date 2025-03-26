@@ -1,0 +1,326 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #2c3e50;
+    margin: 0;
+}
+
+.heading {
+    border-radius: 5px;
+    font-size: medium;
+    /* ~16px */
+    color: aliceblue;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.heading h1 {
+    font-size: 50px;
+    /* If nested, though not needed */
+}
+
+.clock-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.clockimg {
+    margin: 0 auto;
+    max-width: 100%;
+    display: block;
+    position: relative;
+}
+
+.clockimg img {
+    width: 100%;
+    height: auto;
+}
+
+.clock {
+    background: #020407;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 96px;
+    text-align: center;
+}
+
+.time {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    color: #ecf0f1;
+    margin: 0;
+}
+
+.period {
+    font-size: 24px;
+    vertical-align: super;
+}
+
+/* Media query for medium-small screens */
+@media (max-width: 600px) {
+    .clock {
+        padding: 4px 49px;
+    }
+
+    .time {
+        font-size: 36px;
+    }
+
+    .period {
+        font-size: 18px;
+    }
+
+    .heading {
+        font-size: 24px;
+    }
+}
+
+/* Media query for smaller devices */
+@media (max-width: 400px) {
+    .clock {
+        padding: 1px 17px;
+        min-height: 45px;
+        width: auto;
+    }
+
+    .time {
+        font-size: 20px;
+    }
+
+    .period {
+        font-size: 12px;
+    }
+
+    .heading {
+        font-size: 20px;
+    }
+}
+
+/* Media query for small phone screens (e.g., 320px) */
+@media (max-width: 320px) {
+    .clock {
+        padding: 0px 3px;
+        min-height: 0;
+        width: auto;
+        height: 35px;
+        top: 58px;
+    }
+
+    .time {
+        font-size: 18px;
+    }
+
+    .period {
+        font-size: 11px;
+    }
+
+    .heading {
+        font-size: 18px;
+        margin: 0 0 15px 0;
+    }
+}
+
+/* Media query for very small screens */
+@media (max-width: 200px) {
+    .clock {
+        padding: 0px 0px;
+        min-height: 0;
+        /* Fixed from -1px */
+        width: 25px;
+        height: 16px;
+        top: 17px;
+        background-color: transparent;
+    }
+
+    .time {
+        font-size: 4px;
+    }
+
+    .period {
+        font-size: 2px;
+    }
+
+    .heading {
+        font-size: 5px;
+    }
+}
+
+/* New media query range from 800px to 100px */
+@media (max-width: 800px) {
+    .clock {
+        padding: 15px 30px;
+        width: 80%;
+        /* Percentage of container, approximates image */
+        min-height: 80px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 15px 30px;
+        width: 41%;
+        min-height: 89px;
+        top: 50%;
+    }
+
+    .time {
+        font-size: 40px;
+    }
+
+    .period {
+        font-size: 20px;
+    }
+
+    .heading {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 700px) {
+    .clock {
+        padding: 4px 49px;
+        width: 30%;
+        min-height: 70px;
+    }
+}
+
+@media (max-width: 600px) {
+    .clock {
+        width: 35%;
+        min-height: 64px;
+        left: 178px;
+        padding-left: 14px;
+        height: 38px;
+        top: 179px;
+    }
+
+}
+
+@media (max-width: 588px) {
+    .clock {
+        padding: 15px 28px;
+        width: 38%;
+        min-height: 48px;
+        left: 172px;
+        top: 172px;
+    }
+
+    .time {
+        font-size: 20px;
+    }
+
+    .period {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .clock {
+        padding: 2px 13px;
+        width: 43%;
+        min-height: 57px;
+        left: 131px;
+        top: 132px;
+    }
+
+    .time {
+        font-size: 20px;
+    }
+
+    .period {
+        font-size: 20px;
+    }
+
+}
+
+
+@media (max-width: 400px) {
+    .clock {
+        padding: 1px 17px;
+        width: 45%;
+        min-height: 42px;
+        left: 88px;
+        top: 86px;
+    }
+}
+
+@media (max-width: 320px) {
+    .clock {
+        padding: 0px 3px;
+        width: 49%;
+        height: 31px;
+        min-height: 0;
+        top: 48%;
+        left: 58px;
+        border-radius: 1px;
+
+    }
+
+
+    .time {
+        font-size: 10px;
+    }
+
+    .period {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 200px) {
+    .clock {
+        padding: 0px 0px;
+        width: 52%;
+        height: 23px;
+        min-height: 0;
+        top: 41%;
+        background-color: transparent;
+        left: 22px;
+    }
+
+
+    .time {
+        font-size: 4px;
+    }
+
+    .period {
+        font-size: 4px;
+    }
+}
+
+@media (max-width: 100px) {
+    .clock {
+        padding: 0px 0px;
+        width: 119%;
+        height: 12px;
+        min-height: 0;
+        top: 2%;
+        background-color: transparent;
+        left: 7px;
+    }
+
+    .h1 {
+        font-size: small;
+    }
+
+    .time {
+        font-size: 1px;
+    }
+
+    .period {
+        font-size: 1px;
+    }
+
+    .heading {
+        font-size: 4px;
+    }
+}
